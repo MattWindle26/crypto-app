@@ -1,4 +1,13 @@
 .cryptoBlock{
     padding: 20px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.cryptoBlock i{
+    margin-bottom: 1rem;
+}
+.cryptoBlock h2{
+    font-size: 3rem;
+    font-weight: 400;
 }

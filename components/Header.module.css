@@ -2,8 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 4rem 0;
     gap: 20px;
+    border-bottom: 2px solid #EEE;
+    margin-bottom: 40px;
 }
 .header h2{
     font-size: 3rem;
@@ -19,24 +21,45 @@
     justify-content: center;
     align-items: center;
     margin-right: 2rem;
+    position: relative;
 }
 .notification i{
     font-size: 2.5rem;
     transition: scale 0.25s ease;
+    color: rgb(72, 72, 72);
 }
-.notification:hover i{
+.notification i:after{
+    content: "1";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: rgb(255, 65, 65);
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+    right: 0;
+    color: white;
+    font-size: 1rem;
+}
+/* .notification:hover i{
     scale: 1.1;
-}
+} */
 .headerIcons{
     display: flex;
 }
 .searchBar{
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .searchBar input{
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     font-size: 1.4rem;
     outline: none;
-    border: 2px solid #eee;
+    border: 2px solid rgb(222, 222, 222);
     width: 100%;
+    max-width: 500px;
+    border-radius: 4px;
 }
